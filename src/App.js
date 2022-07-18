@@ -13,8 +13,8 @@ function App() {
   // show notes
   useEffect(() => {
     const getNotes = async () => {
-      const getfromserver = await fetchNotes();
-      setNotes(getfromserver);
+      const getFromServer = await fetchNotes();
+      setNotes(getFromServer);
     };
 
     getNotes();
@@ -35,8 +35,11 @@ function App() {
     const newNote = {
       id: number,
       text: text,
+      time: date.toLocaleTimeString(),
       date: date.toLocaleDateString(),
     };
+
+    /* add note to db */
     const res = await fetch("http://localhost:3300/notes", {
       method: "POST",
       headers: {
@@ -49,6 +52,17 @@ function App() {
 
     setNotes([...NotesList, data.res]);
   };
+  // this for deleting notes
+  const deletingNote = async (id) => {
+    const response = await fetch(`http://localhost:3300/notes/${id}`, {
+      method: "DELETE",
+    });
+    //We should control the response status to decide if we will change the state or not.
+    response.status === 200
+      ? setNotes(notes.filter((note) => note.id !== id))
+      : alert("Error Deleting This Note");
+  };
+
   return (
     <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
@@ -59,7 +73,7 @@ function App() {
             note.text.toLowerCase().includes(searchNote)
           )}
           handleAddNote={addNote}
-          // handleDelete={deletingNote}
+          handleDelete={deletingNote}
         />
       </div>
     </div>

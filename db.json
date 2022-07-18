@@ -1,24 +1,3 @@
 {
-  "notes": [
-    {
-      "id": 1,
-      "text": "dasdas",
-      "date": "7/18/2022"
-    },
-    {
-      "id": 2,
-      "text": "djasiojdasdijo\ndsaasdas",
-      "date": "7/18/2022"
-    },
-    {
-      "id": 3,
-      "text": "dasdasdassd",
-      "date": "7/18/2022"
-    },
-    {
-      "id": 4,
-      "text": "this is a note ",
-      "date": "7/18/2022"
-    }
-  ]
+  "notes": []
 }
