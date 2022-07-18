@@ -1,0 +1,93 @@
+@import "config";
+
+
+* {
+
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        color: rgb(21, 93, 226);
+
+    }
+}
+
+.container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.notes-list {
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note {
+    background-image: linear-gradient(to top, #2f73cc 10%, #136de2 50%);
+    white-space: nowrap;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .new {
+        background-color: aquamarine;
+    }
+
+
+}
+
+
+.note-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    background-image: linear-gradient(to top, #2f73cc 10%, #136de2 50%);
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+.save {
+
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 5px 10px 5px 10px;
+    border: solid 4px #136de2;
+
+    &:hover {
+        background-color: #4a74aa;
+        cursor: pointer;
+        @include easeOut;
+    }
+
+
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: rgb(27, 47, 102);
+}

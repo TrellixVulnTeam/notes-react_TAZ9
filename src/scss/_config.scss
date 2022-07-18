@@ -1,0 +1,5 @@
+@mixin easeOut {
+    //this called function and we can reuse it all over the code
+    transition: all 0.5s ease-out;
+
+}
