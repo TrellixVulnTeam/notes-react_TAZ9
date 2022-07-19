@@ -1,7 +1,7 @@
 @import "config";
-@import "mobile";
 
 * {
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -121,7 +121,7 @@ textarea {
 
     background-color: rgb(27, 47, 102);
     color: #fff;
-    
+
 
     span {
         color: antiquewhite;
@@ -139,3 +139,5 @@ textarea {
         color: #fff;
     }
 }
+
+@import "mobile";

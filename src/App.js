@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import AddNote from "./components/AddNote";
 import Search from "./components/Search";
 import NotesList from "./components/NotesList";
+
+
 function App() {
   const [notes, setNotes] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
@@ -67,6 +69,9 @@ function App() {
     <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
         <Header handleToggleDarkMode={setDarkMode} />
+        <div>
+
+        </div>
         <Search handleSearch={searchNote} />
         <NotesList
           notes={notes.filter((note) =>
@@ -76,7 +81,9 @@ function App() {
           handleDelete={deletingNote}
         />
       </div>
+
     </div>
+
   );
 }
 
