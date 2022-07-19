@@ -1,3 +1,22 @@
 {
-  "notes": []
+  "notes": [
+    {
+      "id": 1,
+      "text": "lol",
+      "time": "1:47:38 AM",
+      "date": "7/19/2022"
+    },
+    {
+      "id": 3,
+      "text": "dsadasd",
+      "time": "2:07:31 AM",
+      "date": "7/19/2022"
+    },
+    {
+      "id": 4,
+      "text": "dsdas",
+      "time": "2:07:45 AM",
+      "date": "7/19/2022"
+    }
+  ]
 }

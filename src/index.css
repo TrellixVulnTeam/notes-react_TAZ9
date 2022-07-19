@@ -8,6 +8,9 @@
   .header span {
     color: #155de2; }
 
+body {
+  background-color: #e4edfa; }
+
 .container {
   max-width: 960px;
   margin-right: auto;
@@ -22,7 +25,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 .note {
-  background-image: linear-gradient(to top, #2f73cc 10%, #136de2 50%);
+  background-image: linear-gradient(to top, #4d83c9 1%, #4284ff 100%);
   white-space: nowrap;
   border-radius: 1rem;
   padding: 1rem;
@@ -31,7 +34,7 @@
   flex-direction: column;
   justify-content: space-between; }
   .note .new {
-    background-color: aquamarine; }
+    background-color: #2f73cc; }
 
 .note-footer {
   display: flex;
@@ -41,7 +44,7 @@
 textarea {
   border: none;
   resize: none;
-  background-image: linear-gradient(to top, #2f73cc 10%, #136de2 50%); }
+  background-image: linear-gradient(to top, #4d83c9 1%, #4284ff 100%); }
   textarea:focus {
     outline: none; }
 
@@ -51,12 +54,37 @@ textarea {
   padding: 5px 10px 5px 10px;
   border: solid 4px #136de2; }
   .save:hover {
-    background-color: #4a74aa;
+    background-color: #2f73cc;
     cursor: pointer;
     transition: all 0.5s ease-out; }
 
 .delete-icon {
   cursor: pointer; }
 
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #dfe7fa;
+  border: solid #4a74aa;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem; }
+  .search input {
+    border: none;
+    background-color: #dfe7fa; }
+    .search input:focus {
+      outline: none; }
+  .search .search-icon {
+    cursor: pointer; }
+
 .dark-mode {
-  background-color: #1b2f66; }
+  background-color: #1b2f66;
+  color: #fff; }
+  .dark-mode span {
+    color: antiquewhite; }
+  .dark-mode textarea {
+    color: #fff; }
+  .dark-mode .note {
+    color: #fff; }
+  .dark-mode h1 {
+    color: #fff; }

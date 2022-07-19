@@ -16,6 +16,11 @@
     }
 }
 
+body {
+    background-color: rgb(228, 237, 250);
+}
+
+
 .container {
     max-width: 960px;
     margin-right: auto;
@@ -32,7 +37,7 @@
 }
 
 .note {
-    background-image: linear-gradient(to top, #2f73cc 10%, #136de2 50%);
+    background-image: linear-gradient(to top, #4d83c9 1%, #4284ff 100%);
     white-space: nowrap;
     border-radius: 1rem;
     padding: 1rem;
@@ -42,12 +47,9 @@
     justify-content: space-between;
 
     .new {
-        background-color: aquamarine;
+        background-color: #2f73cc;
     }
-
-
 }
-
 
 .note-footer {
     display: flex;
@@ -58,7 +60,7 @@
 textarea {
     border: none;
     resize: none;
-    background-image: linear-gradient(to top, #2f73cc 10%, #136de2 50%);
+    background-image: linear-gradient(to top, #4d83c9 1%, #4284ff 100%);
 
     &:focus {
         outline: none;
@@ -74,7 +76,7 @@ textarea {
     border: solid 4px #136de2;
 
     &:hover {
-        background-color: #4a74aa;
+        background-color: #2f73cc;
         cursor: pointer;
         @include easeOut;
     }
@@ -86,6 +88,51 @@ textarea {
     cursor: pointer;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(223, 231, 250);
+    border: solid #4a74aa;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem;
+
+    input {
+        border: none;
+        background-color: rgb(223, 231, 250);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+    .search-icon {
+        cursor: pointer;
+    }
+
+
+}
+
+
+
 .dark-mode {
     background-color: rgb(27, 47, 102);
+    color: #fff;
+
+    span {
+        color: antiquewhite;
+    }
+
+    textarea {
+        color: #fff;
+    }
+
+    .note {
+        color: #fff;
+    }
+
+    h1 {
+        color: #fff;
+    }
 }

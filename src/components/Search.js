@@ -14,7 +14,7 @@ function Search({ handleSearch }) {
       <MdSearch className="search-icon" size="1.5rem" />
       {/*this is the input tag for our search and here , I have used some onClick events for searching*/}
       <input
-      size="103"
+        size="150"
         type="text"
         placeholder="Search for your notes..."
         onChange={(event) => handleSearch(event.target.value)}
