@@ -1,5 +1,5 @@
 @import "config";
-
+@import "mobile";
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -117,8 +117,11 @@ textarea {
 
 
 .dark-mode {
+
+
     background-color: rgb(27, 47, 102);
     color: #fff;
+    
 
     span {
         color: antiquewhite;
